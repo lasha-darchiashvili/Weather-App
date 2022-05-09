@@ -317,7 +317,7 @@ h1 {
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-device-width: 1000px) {
   .weather {
     display: flex;
     position: static;
@@ -342,7 +342,7 @@ h1 {
     position: static;
     padding: 20px 40px;
     transform: none;
-    margin-left: 50px;
+
     font-size: 16px;
   }
 
@@ -355,5 +355,28 @@ h1 {
   .type,
   .humidity {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .tempboxes {
+    flex-direction: column;
+  }
+  .weather {
+    margin-top: 30px;
+    gap: 30px;
+    justify-content: space-evenly;
+    height: auto;
+  }
+  .forecast {
+    width: 80%;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    height: 25vh;
   }
 }
