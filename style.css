@@ -239,3 +239,121 @@ h1 {
   margin-bottom: 10px;
   color: #ced4da;
 }
+
+@media all and (max-width: 1150px) {
+  .weekday {
+    font-size: 12px;
+    padding: 2px 4px;
+    width: auto;
+  }
+
+  .daytemp {
+    font-size: 12px;
+  }
+  .forecast {
+    padding: 48px 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  .weather {
+    display: flex;
+    position: static;
+    width: 100%;
+    background: none;
+    gap: 15%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header {
+    margin-bottom: 1px;
+  }
+  .forecast {
+    position: static;
+    padding: 0;
+
+    padding: 20px 40px;
+  }
+  .tempboxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .main {
+    position: static;
+    padding: 20px 40px;
+    transform: none;
+  }
+  body {
+    background-size: auto;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 16vh;
+  }
+
+  .city {
+    font-size: 20px;
+  }
+
+  .temp {
+    font-size: 24px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .weather {
+    display: flex;
+    position: static;
+    width: auto;
+    background: none;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .forecast {
+    position: static;
+    padding: 0;
+    margin-right: 50px;
+    padding: 20px 40px;
+  }
+  .tempboxes {
+    display: flex;
+  }
+
+  .main {
+    position: static;
+    padding: 20px 40px;
+    transform: none;
+    margin-left: 50px;
+    font-size: 16px;
+  }
+
+  .city,
+  .temp {
+    font-size: 16px;
+  }
+
+  .date,
+  .type,
+  .humidity {
+    font-size: 12px;
+  }
+}
