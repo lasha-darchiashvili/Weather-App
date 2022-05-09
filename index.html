@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <form class="form">
+          <input
+            type="text"
+            class="search"
+            value=""
+            placeholder="Type a City"
+          />
+          <input type="submit" class="submit" />
+        </form>
+        <a href="" class="citt">Tbilisi</a>
+        <a href="" class="citt">Berlin</a>
+        <a href="" class="citt">London</a>
+        <a href="" class="citt">Prague</a>
+        <a href="" class="citt">Rome</a>
+      </header>
+
+      <div class="weather">
+        <div class="main">
+          <p class="city">Tbilisi</p>
+          <p class="date">Monday</p>
+          <div class="inside">
+            <p class="temp">100</p>
+            <img src="" class="logo" alt="logo" />
+          </div>
+          <p class="type">Sunny</p>
+          <p class="humidity">70%</p>
+        </div>
+
+        <div class="forecast">
+          <p class="dataname">Daily Average</p>
+          <div class="tempboxes">
+            <div class="day">
+              <p class="weekday">Monday</p>
+              <img src="" class="dailylogo" alt="weather" />
+              <p class="daytemp">100</p>
+            </div>
+            <div class="day">
+              <p class="weekday">Tuesday</p>
+              <img src="" class="dailylogo" alt="weather" />
+              <p class="daytemp">100</p>
+            </div>
+            <div class="day">
+              <p class="weekday">saturday</p>
+              <img src="" class="dailylogo" alt="weather" />
+              <p class="daytemp">100</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="error-container">
+        <h1 class="error">Error</h1>
+        <p class="error-message">Please enter a valid City</p>
+        <button class="close-popup button">Close</button>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
